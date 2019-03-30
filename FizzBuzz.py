@@ -1,13 +1,22 @@
 cont = 1
+a = []
+b = []
+c = []
 for i in range(100):
 
     if(cont % 3 == 0 and cont % 5 == 0):
-        print("FizzBuzz")
+        a.append(cont)
+        #FIZZBUZZ
     elif(cont % 3 == 0):
-        print("Fizz")
+        b.append(cont)
+        #FIZZ
     elif(cont % 5 == 0):
-        print("Buzz")
-    else:
-        print(cont)
-
+        c.append(cont)
+        #BUZZ
     cont += 1
+print("FizzBuzz")
+print(a)
+print("Fizz")
+print(b)
+print("Buzz")
+print(c)
